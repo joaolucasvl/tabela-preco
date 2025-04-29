@@ -1,7 +1,7 @@
 /* Estilos gerais do corpo */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #000;
     margin: 0;
     padding: 0;
 }
@@ -31,7 +31,7 @@ table.rTable td {
 
 /* Cabeçalho da tabela */
 table.rTable th {
-    background-color: #343a40;
+    background-color: #000;
     color: #fff;
     font-weight: bold;
 }
@@ -43,10 +43,10 @@ table.rTable tbody tr:nth-child(1) {
     background-color: #ff7f50 ;
 }
 table.rTable tbody tr:nth-child(2) {
-    background-color: #f0e68c ;
+    background-color: #f5deb3 ;
 }
 table.rTable tbody tr:nth-child(3) {
-    background-color: #f5deb3  ;
+    background-color: #f0e68c  ;
 }
 table.rTable tbody tr:nth-child(4) {
     background-color: #87cefa  ;
@@ -68,6 +68,9 @@ table.rTable tbody tr:nth-child(9) {
 }
 table.rTable tbody tr:nth-child(10) {
     background-color: #000000  ;
+}
+table.rTable tbody tr:nth-child(11) {
+    background-color: #343a40  ;
 }
 
 table.rTable tbody tr:hover {
