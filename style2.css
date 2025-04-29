@@ -1,30 +1,111 @@
-*{margin:0; padding: 0; box-sizing: border-box;}
-
-.content{display:flex; margin: auto;}
-
-.rTable{width: 100%; text-align: center;}
-    .rTable thead{background: black; font-weight: bold; color:#FFFFE0; font-size: 25px;}
-    .rTable tbody tr:nth-child(1n){background: #7FFFD4; font-weight: bold; font-size: 25px;}
-    .rTable th , .rTable td{padding: 20px 0;}
-
-@media screen and (max-width: 767px){
-    .content{width: 96%;}
-
-    .rTable thead{display:none;}
-    .rTable tbody td{display: flex; flex-direction: column; }
+/* Estilos gerais do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
-@media only screen and (min-width: 1200px){
-    .content{width:100%;}
-    .rTable tbody tr td:nth-child(1){width:4%;}
-    .rTable tbody tr td:nth-child(2){width:5%;}
-    .rTable tbody tr td:nth-child(3){width:5%;}
-    .rTable tbody tr td:nth-child(4){width:4%;}
-    .rTable tbody tr td:nth-child(5){width:4%;}
-	.rTable tbody tr td:nth-child(6){width:6%;}
-	.rTable tbody tr td:nth-child(7){width:6%;}
-	.rTable tbody tr td:nth-child(8){width:6%;}
-	.rTable tbody tr td:nth-child(9){width:6%;}
-	.rTable tbody tr td:nth-child(10){width:6%;}
+.content {
+    max-width: 2000px;
+    height: 800px;
+    margin: 0 auto;
+    padding: 25px;
+}
 
+/* Estilos para a tabela */
+table.rTable {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table.rTable th,
+table.rTable td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 5px solid #fff;
+}
+
+/* Cabeçalho da tabela */
+table.rTable th {
+    background-color: #343a40;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Estilo para as linhas da tabela */
+
+
+table.rTable tbody tr:nth-child(1) {
+    background-color: #ff7f50 ;
+}
+table.rTable tbody tr:nth-child(2) {
+    background-color: #f0e68c ;
+}
+table.rTable tbody tr:nth-child(3) {
+    background-color: #f5deb3  ;
+}
+table.rTable tbody tr:nth-child(4) {
+    background-color: #87cefa  ;
+}
+table.rTable tbody tr:nth-child(5) {
+    background-color: #2f4f44  ;
+}
+table.rTable tbody tr:nth-child(6) {
+    background-color: #8b4513  ;
+}
+table.rTable tbody tr:nth-child(7) {
+    background-color: #ffcc00  ;
+}
+table.rTable tbody tr:nth-child(8) {
+    background-color: #d45a6f  ;
+}
+table.rTable tbody tr:nth-child(9) {
+    background-color: #3b0a45  ;
+}
+table.rTable tbody tr:nth-child(10) {
+    background-color: #000000  ;
+}
+
+table.rTable tbody tr:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+
+/* Estilos para as células de preço */
+table.rTable td {
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px #000;
+}
+
+/* Estilos para as células que têm o texto 'R$ -----' */
+table.rTable td:contains('R$ -----') {
+    color: #000;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    table.rTable th, 
+    table.rTable td {
+        padding: 8px;
+    }
+
+    table.rTable th {
+        font-size: 12px;
+    }
+
+    table.rTable td {
+        font-size: 12px;
+    }
+    
+    /* Ajuste do título */
+    .content {
+        padding: 10px;
+    }
 }

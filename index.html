@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tabelas Chopp</title>
     <link rel="stylesheet" href="style2.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -142,4 +141,19 @@
     </table>
 </div>
 </body>
+<script type="module">
+    
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+    const firebaseConfig = {
+      apiKey: "AIzaSyAXNj2v0uOQn0ZIJKhWLPzV06Nd71alelM",
+      authDomain: "tabela-dados.firebaseapp.com",
+      databaseURL: "https://tabela-dados-default-rtdb.firebaseio.com",
+      projectId: "tabela-dados",
+      storageBucket: "tabela-dados.firebasestorage.app",
+      messagingSenderId: "1006252091868",
+      appId: "1:1006252091868:web:5fd63bf73420d817d10719"
+    };
+    const app = initializeApp(firebaseConfig);
+  </script>
+  <script type="module" src="script.js"></script>
 </html>
