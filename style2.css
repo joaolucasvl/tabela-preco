@@ -10,13 +10,13 @@ body {
     max-width: 2000px;
     height: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 /* Estilos para a tabela */
 table.rTable {
     width: 100%;
-    height: 100%;
+  
     border-collapse: collapse;
     margin: 20px 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -24,7 +24,7 @@ table.rTable {
 
 table.rTable th,
 table.rTable td {
-    padding: 3px 10px;
+    height: 50px;
     text-align: center;
     border: 5px solid #fff;
 }
@@ -33,6 +33,8 @@ table.rTable td {
 table.rTable th {
     background-color: #000;
     color: #fff;
+    font-size: 20px;
+    height: 50px;
     font-weight: bold;
 }
 
